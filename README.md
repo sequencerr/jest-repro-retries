@@ -3,8 +3,11 @@ This repo describes how to fix unintuitive error. afaik it was due bad tests cod
 ## Fix is described in https://github.com/sequencerr/jest-repro-retries/commit/87bd5d017e5a8393fb41966494ad2f87a345d6d8
 
 `$ npx jest`
-fix:
+
+workaround:
+
 `$ NODE_OPTIONS=--unhandled-rejections=warn npx jest`
+
 or try
 `--maxWorkers 2`, `--maxWorkers $(nproc)`
 

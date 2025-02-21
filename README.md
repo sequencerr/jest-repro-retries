@@ -1,3 +1,5 @@
+This repo describes how to fix unintuitive error. afaik it was due bad tests code structre(js import/export some vars), and promises.
+
 `$ npx jest`
 fix:
 `$ NODE_OPTIONS=--unhandled-rejections=warn npx jest`

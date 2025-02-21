@@ -12,3 +12,7 @@ export const productsRepositoryMocked = {
 		delete: jest.fn()
 	}
 };
+
+describe('ProductsService', () => {
+	it('test suite must contain at least one test. should be defined', () => {});
+});

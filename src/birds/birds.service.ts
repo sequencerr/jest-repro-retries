@@ -6,12 +6,12 @@ import { Product } from 'src/products/product.entity';
 
 @Injectable()
 export class BirdsService {
-  constructor(
-    @InjectRepository(Product)
-    private readonly productsRepository: Repository<Product>,
-  ) {}
+	constructor(
+		@InjectRepository(Product)
+		private readonly productsRepository: Repository<Product>
+	) {}
 
-  async create() {
-    await this.productsRepository.findOneByOrFail({});
-  }
+	async create() {
+		await this.productsRepository.findOneByOrFail({});
+	}
 }

@@ -1,5 +1,7 @@
 This repo describes how to fix unintuitive error. afaik it was due bad tests code structre(js import/export some vars), and promises.
 
+## Fix is described in https://github.com/sequencerr/jest-repro-retries/commit/87bd5d017e5a8393fb41966494ad2f87a345d6d8
+
 `$ npx jest`
 fix:
 `$ NODE_OPTIONS=--unhandled-rejections=warn npx jest`

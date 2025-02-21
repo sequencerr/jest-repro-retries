@@ -2,8 +2,6 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { BirdsService } from './birds.service';
 import { productsRepositoryMocked } from 'src/products/products.service.spec';
 
-jest.retryTimes(1);
-
 describe('BirdsService', () => {
 	let service: BirdsService;
 

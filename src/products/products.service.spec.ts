@@ -1,8 +1,6 @@
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Product } from './product.entity';
 
-jest.retryTimes(1);
-
 export const productsRepositoryMocked = {
 	provide: getRepositoryToken(Product),
 	useValue: {
@@ -14,7 +12,3 @@ export const productsRepositoryMocked = {
 		delete: jest.fn()
 	}
 };
-
-describe('ProductsService', () => {
-	it('should be defined', () => {});
-});

@@ -11,7 +11,7 @@ export class BirdsService {
 		private readonly productsRepository: Repository<Product>
 	) {}
 
-	async create() {
-		await this.productsRepository.findOneByOrFail({});
+	create() {
+		return this.productsRepository.findOneByOrFail({});
 	}
 }

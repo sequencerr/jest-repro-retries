@@ -6,7 +6,8 @@ export const productsRepositoryMocked = {
 	useValue: {
 		find: jest.fn().mockResolvedValue([]),
 		findOneBy: jest.fn().mockResolvedValue([][0]),
-		// findOneByOrFail: jest.fn().mockResolvedValue([][0]),
+		// it was commented to demonstrate that it actually doesn't matter whatever it's defined or not.
+		findOneByOrFail: jest.fn().mockResolvedValue([][0]),
 		save: jest.fn().mockResolvedValue([][0]),
 		remove: jest.fn(),
 		delete: jest.fn()
